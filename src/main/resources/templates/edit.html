@@ -1,0 +1,13 @@
+
+<div class="content-wrapper p-5" >
+
+<form action="" method="post" th:action="@{/admin/edit-category}" th:object="${category}">
+	<input type="hidden"  th:field="*{id}"><br>
+       <input type="text" placeholder="Category name" th:field="*{categoryName}"><br>
+       <input type="radio" name="status" th:field="*{categoryStatus}" value="1"><label for="">Yes</label><br>
+       <input type="radio"  name="status" th:field="*{categoryStatus}" value="0" /> <label for="">No</label><br>
+       <input type="submit" >
+   </form>
+
+
+</div>
